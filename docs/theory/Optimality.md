@@ -280,7 +280,10 @@ $$
 L (x, \lambda) = f(x) + \lambda g(x)
 $$
 
-Then $$x^*$$ point - is a local minimum of the problem described above, if and only if:
+The classical  first and second order optimality conditions for a local minimizer
+$x^*$, stated under the linear independence constraint qualification (LICQ), can be written as follows: 
+
+If $x^*$ is a local minimum of the problem described above, then there exists a unique Lagrange multiplier $\lambda^*$ such that:
 
 $$
 \begin{split}
@@ -288,8 +291,10 @@ $$
     & (2) \; \lambda^* \geq 0 \\
     & (3) \; \lambda^* g(x^*) = 0 \\
     & (4) \; g(x^*) \leq 0\\
-    & (5) \; \langle y , \nabla^2_{xx} L(x^*, \lambda^*) y \rangle > 0 \\
-    & \forall y \neq 0 \in \mathbb{R}^n : \nabla g(x^*)^\top y \leq 0
+    & (5) \; \forall y \in C(x^*):  \langle y , \nabla^2_{xx} L(x^*, \lambda^*) y \rangle \geq 0 \\
+    &  \text{where } C(x^*) = \{y \ \in \mathbb{R}^n |  \nabla f(x^*) ^\top y \leq 0 \text{ and } \forall i \in I(x^*):  \nabla g_i(x^*)^⊤ y \leq 0
+    \} \text{ is the critical cone.} \\
+    & I(x^*) = \{i| g_i(x^*) = 0\} \\
 \end{split}
 $$
 
