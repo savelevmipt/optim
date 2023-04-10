@@ -87,7 +87,7 @@ $$
 \end{align*}
 $$
 
-The latter formula provide us with easy way to compute PCA via SVD with any number of principal components:
+The latter formula provides us with easy way to compute PCA via SVD with any number of principal components:
 
 $$
 \Pi_r = U_r \Sigma_r
